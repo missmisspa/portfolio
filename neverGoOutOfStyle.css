@@ -1,0 +1,311 @@
+/* neverGoOutOfStyle.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap");
+
+body, h1, h2, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+}
+
+.content-container {
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+section {
+    padding: 80px 20px 20px;
+    margin-bottom: 20px;
+    height: 100vh; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    background-color: #ffff;
+    color: #2e2e2e;
+    padding: 15px 250px 10px 250px;
+    align-items: center; 
+    top: 0; 
+    position: sticky;
+    z-index: 1000;
+    transition: box-shadow 0.3s ease;
+}
+
+header.shadow {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h2{
+    font-family: 'Domine', serif;
+    color: #2e2e2e; 
+    font-size: 23px;
+    font-weight: 500;
+}
+
+header h2:hover{
+    color: #e75480;
+    cursor: pointer;
+}
+
+header h2:active{
+    color:#e75480; 
+}
+
+nav {
+    display: flex;
+    align-items: center; 
+    font-family: 'Domine', serif;
+    font-weight: 500;
+}
+
+nav a {
+    margin-left: 10px;
+    color: #2e2e2e;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin: 0 1em;
+    transition: background-color 0.3s ease;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: #e75480; 
+}
+
+nav a:active{
+    color: #e75480;
+}
+
+h2 {
+    color: #2e2e2e;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+}
+
+.home-image {
+    margin-left: 40px;
+    max-width: 40%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.text-content {
+    text-align: left;
+}
+
+#home h1{
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    color: #2e2e2e;
+    font-family: 'Domine', serif; 
+}
+
+#home h3{
+    margin: 0;
+    padding: 5px;
+    font-size: 30px;
+    color: #545454; 
+    font-family: 'Domine', serif; 
+}
+
+#home p {
+    margin: 0;
+    padding: 5px;
+    font-size: 20px;
+    color: #545454; 
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.social{
+    display: flex;
+}
+
+.social-image {
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 20px;
+    margin-top: 15px;
+    transition: filter 0.5s ease-in-out;
+}
+
+.social-image:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 90px; 
+    font-family: 'Domine', serif; 
+}
+
+.about-details {
+    width: 60%;
+}
+
+.about-img {
+    width: 60%; 
+}
+
+.about-img img {
+    width: 100%; 
+}
+
+.about-details h3 {
+    font-size: 40px;
+    font-family: 'Domine', serif; 
+    margin-bottom: 10px;
+    color: #545454; 
+}
+
+.about-details p {
+    font-size: 20px;
+    font-family: 'Times New Roman', sans-serif;
+    color: #545454; 
+    margin-bottom: 20px;
+}
+
+.btn-pdf {
+    background-color: #FF4081;
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 17px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-pdf:hover {
+    background-color: #d81b60;
+    color: #FFF;
+}
+
+.skill-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Domine', serif;
+}
+
+
+.services-section {
+    padding: 80px 0;
+    font-family: 'Domine', serif;
+    color: #545454; 
+}
+
+.service-box {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.service-box:hover {
+    filter: drop-shadow(0px 0px 11px #beb6b6);
+}
+
+.service-icon {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.service-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 14px;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.contact-instructions {
+    flex: 1;
+    max-width: 45%;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 45%;
+}
+
+.contact-section h2 {
+    font-size: 25px;
+    font-family: 'Domine', serif; 
+    margin-bottom: 30px;
+    color: #545454;
+}
+
+.contact-section p {
+    font-size: 20px;
+    font-family: 'Domine', serif; 
+    color: #545454; 
+    margin-bottom:15px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section label {
+    margin-bottom: 8px;
+    font-family: 'Domine', serif; 
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: none;
+    background-color: #FFF1F5;
+}
+
+.contact-section button {
+    font-size: 15px;
+    font-family: 'Domine', serif; 
+    background-color: #FF4081;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.contact-section button:hover {
+    background-color: #d81b60;
+    color: white;
+}
